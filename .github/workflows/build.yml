@@ -1,0 +1,20 @@
+name: C++ CI (Build)
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Compile Code
+      run: g++ main.cpp -o app -Wall -Wextra -std=c++14
+
+    - name: Run Algorithm
+      run: ./app input.txt
