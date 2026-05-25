@@ -49,7 +49,7 @@ classDiagram
 
 Bash
 
-git clone
+git clone https://github.com/Vit0GG/RecursionEliminator.git
 cd RecursionEliminator
 g++ main.cpp -o app -Wall -Wextra -O2
 ./app input.txt
