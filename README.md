@@ -15,7 +15,7 @@
 
 ## Архитектура проекта (UML)
 Архитектура построена на паттерне Композиция.
-mermaid
+```mermaid
 classDiagram
     class RecursionEliminator {
         +process(Rule) Rule
@@ -37,7 +37,7 @@ classDiagram
     RecursionEliminator --> Parser : uses
     Parser --> Rule : creates
     Rule --> RegexNode : contains
-
+```
     Инструкция по сборке
 Требования
 Компилятор с поддержкой C++14 (GCC 9.0+, MSVC, Clang).
