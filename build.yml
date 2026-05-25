@@ -1,0 +1,20 @@
+name: C++ CI (Build & Sanitizers)
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Compile with Address Sanitizer
+      run: g++ main.cpp -o app -fsanitize=address -Wall -Wextra -std=c++14
+
+    - name: Run Algorithm on tests
+      run: ./app input.txt
