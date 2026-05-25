@@ -38,7 +38,7 @@ classDiagram
     Parser --> Rule : creates
     Rule --> RegexNode : contains
 ```
-    Инструкция по сборке
+Инструкция по сборке
 Требования
 Компилятор с поддержкой C++14 (GCC 9.0+, MSVC, Clang).
 Сборка

@@ -13,10 +13,10 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Исходные файлы\.github">
+    <Filter Include=".github">
       <UniqueIdentifier>{55625bb1-2f5c-459c-ac9a-a8fc6299812c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Исходные файлы\.github\workflows">
+    <Filter Include=".github\workflows">
       <UniqueIdentifier>{44777fba-df78-49a7-9436-ea88b334dd97}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -32,7 +32,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="build.yml">
-      <Filter>Исходные файлы\.github\workflows</Filter>
+      <Filter>.github\workflows</Filter>
     </None>
   </ItemGroup>
 </Project>
