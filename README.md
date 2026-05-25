@@ -1,6 +1,6 @@
 ﻿# Устранение рекурсии в CFR-грамматиках (Модуль SynGT)
 
-[![CI Build]
+[![CI Build](https://github.com/Vit0GG/RecursionEliminator/actions/workflows/build.yml/badge.svg)](https://github.com/Vit0GG/RecursionEliminator/actions/workflows/build.yml)
 
 ## Описание проекта
 Консольная реализация алгоритма эквивалентных преобразований для устранения левой, правой и центральной рекурсии в CFR-грамматиках на языке C++. 
@@ -38,6 +38,7 @@ classDiagram
     Parser --> Rule : creates
     Rule --> RegexNode : contains
 ```
+```
 Инструкция по сборке
 Требования
 Компилятор с поддержкой C++14 (GCC 9.0+, MSVC, Clang).
@@ -57,6 +58,7 @@ g++ main.cpp -o app -Wall -Wextra -O2
 Откройте файл .sln (или просто main.cpp).
 Убедитесь, что файл input.txt находится в рабочем каталоге.
 Нажмите Ctrl + F5.
+```
 Использование и Алгоритм
 Программа считывает правила из input.txt.
 Формат: Нетерминал : Регулярное выражение .
