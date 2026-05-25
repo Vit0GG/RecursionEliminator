@@ -15,7 +15,7 @@
 
 ## Архитектура проекта (UML)
 Архитектура построена на паттерне Композиция.
-```mermaid
+mermaid
 classDiagram
     class RecursionEliminator {
         +process(Rule) Rule
