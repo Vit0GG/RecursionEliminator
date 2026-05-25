@@ -1,5 +1,8 @@
-﻿#pragma execution_character_set("utf-8")
+﻿#ifdef _WIN32
+#pragma execution_character_set("utf-8")
 #include <windows.h>
+#endif
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -311,9 +314,10 @@ private:
 };
 
 int main(int argc, char* argv[]) {
+#ifdef _WIN32
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
-
+#endif
     cout << "==============================================================\n";
     cout << "АЛГОРИТМ УСТРАНЕНИЯ РЕКУРСИИ В CFR-ГРАММАТИКАХ (Модуль SynGT)\n";
     cout << "==============================================================\n";
